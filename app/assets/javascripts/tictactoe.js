@@ -2,9 +2,6 @@
 //returns X or O
 const player
 
-function updateState(){
-  
-}
 
 $(function(){
   //when adding the ability to start a previous game, switch thisGame!!
