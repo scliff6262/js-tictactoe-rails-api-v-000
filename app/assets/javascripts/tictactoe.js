@@ -66,11 +66,11 @@ $(function(){
 
 })
 
-function player(){
+const player = function(){
   return (window.turn % 2 == 0) ? "X" : "O"
 }
 
-function updateState(){
+const updateState = function(){
   $("td").on("click", function(e){
     debugger;
   })
