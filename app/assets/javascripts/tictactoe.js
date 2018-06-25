@@ -60,5 +60,6 @@ $(function(){
     $("td").each(function(){
       this.textContent = ""
     })
+    debugger;
   })
 })
