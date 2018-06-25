@@ -1,4 +1,9 @@
 // Code your JavaScript / jQuery solution here
+//returns X or O
+function player(){
+  return (window.turn % 2 == 0) ? "X" : "O"
+}
+
 $(function(){
   //when adding the ability to start a previous game, switch thisGame!!
   window.turn = 0//define a turn
@@ -63,8 +68,5 @@ $(function(){
     })
   })
 
-  //returns X or O
-  function player(){
-    return (window.turn % 2 == 0) ? "X" : "O"
-  }
+
 })
