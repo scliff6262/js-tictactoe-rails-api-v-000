@@ -41,7 +41,7 @@ $(function(){
   //reloads a previous games
   $("#games").on("click", function(e){
     e.preventDefault()
-    turn = -
+    turn = 0
     const thisID = $(e.target).data("id") //gets id of clicked game via data-id attr
     $.get("/games/" + thisID, function(r){
       thisGame = r.data["id"]//gets id from Rails server and sets as thisGame on the front-end
