@@ -43,7 +43,7 @@ $(function(){
     const thisID = $(e.target).data("id")
     debugger;
     $.get("/games/" + thisID, function(r){
-      debugger;
+      
     })
   })
 
