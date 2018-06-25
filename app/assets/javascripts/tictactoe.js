@@ -1,13 +1,4 @@
 // Code your JavaScript / jQuery solution here
-//returns X or O
-function player(){
-  return (window.turn % 2 == 0) ? "X" : "O"
-}
-
-function updateState(){
-  
-}
-
 $(function(){
   //when adding the ability to start a previous game, switch thisGame!!
   window.turn = 0//define a turn
@@ -74,3 +65,13 @@ $(function(){
 
 
 })
+
+function player(){
+  return (window.turn % 2 == 0) ? "X" : "O"
+}
+
+function updateState(){
+  $("td").on("click", function(e){
+    
+  })
+}
