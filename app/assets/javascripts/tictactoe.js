@@ -53,5 +53,7 @@ $(function(){
   })
 
   //clears board
-  $("#clear")
+  $("#clear").on("click", function(e){
+    e.preventDefault()
+  })
 })
