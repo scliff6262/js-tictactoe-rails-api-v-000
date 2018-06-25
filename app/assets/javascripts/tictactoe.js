@@ -1,7 +1,7 @@
 // Code your JavaScript / jQuery solution here
 $(function(){
   //when adding the ability to start a previous game, switch thisGame!!
-  let turn = 0
+  let turn 
   let thisGame //set a game ID to determine if this game has already been saved
   //saves or updates current game
   $("#save").on("click", function(e){
