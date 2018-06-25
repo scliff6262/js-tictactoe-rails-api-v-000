@@ -57,7 +57,7 @@ $(function(){
     e.preventDefault()
     thisGame = null
     $("td").each(function(box){
-      box.textContent = ""
+      this.textContent = ""
       debugger;
     })
   })
