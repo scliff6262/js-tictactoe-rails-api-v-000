@@ -1,7 +1,9 @@
 // Code your JavaScript / jQuery solution here
 //returns X or O
-function player(){
-  return (window.turn % 2 == 0) ? "X" : "O"
+const player
+
+function updateState(){
+  
 }
 
 $(function(){
