@@ -42,10 +42,10 @@ $(function(){
     e.preventDefault()
     const thisID = $(e.target).data("id")
     $.get("/games/" + thisID, function(r){
+      debugger;
       let tdArray = $("td")
       const state = r.data.attributes["state"]
       for(let i = 0; i < state.length; i++){
-        debugger;
         tdArray[i].textContent = state[i]
       }
     })
