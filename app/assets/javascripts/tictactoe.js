@@ -64,6 +64,7 @@ $(function(){
   })
 
   $("td").on("click", function(e){
+    debugger;
     window.turn++
     updateState(e.target)
   })
