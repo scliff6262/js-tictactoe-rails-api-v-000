@@ -64,7 +64,7 @@ $(function(){
   })
 
   $("td").on("click", function(e){
-    debugger;
+    updateState(e.target)
   })
 
 
