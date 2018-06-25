@@ -14,7 +14,7 @@ $(function(){
     if (!!thisGame) {
       $.ajax({
         url: "/games/" + thisGame,
-        type: "PUT",
+        type: "PATCH",
         data: {state},
         success: function(r){alert("Game " + r.data["id"] + " updated!")}
       })
