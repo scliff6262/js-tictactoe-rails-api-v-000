@@ -42,7 +42,7 @@ $(function(){
     e.preventDefault()
     const thisID = $(e.target).data("id")
     $.get("/games/" + thisID, function(r){
-      debugger;
+      thisGame = r.data["id"]
       let tdArray = $("td")
       const state = r.data.attributes["state"]
       for(let i = 0; i < state.length; i++){
