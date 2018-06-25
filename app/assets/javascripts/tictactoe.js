@@ -48,9 +48,9 @@ $(function(){
       let tdArray = $("td") //creates array of td elements
       const state = r.data.attributes["state"] //grabs state of selected game from rails server
       for(let i = 0; i < state.length; i++){
-        if(state[i] === "X"){
+        if(state[i] == "X"){
           window.turn++
-        } else if(state[i] === "O"){
+        } else if(state[i] == "O"){
           debugger;
           window.turn++
         }
