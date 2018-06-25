@@ -647,7 +647,7 @@ describe('AJAX interactions with the Rails API', () => {
         jsonifyGames([
           ['', '', '', '', 'X', '', '', 'O', '']
         ])
-      );
+      ); 
 
       const gameButtons = Array.from(gamesDiv.children).filter(c => c.tagName === 'BUTTON');
 
