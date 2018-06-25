@@ -60,6 +60,5 @@ $(function(){
       box.textContent = ""
       debugger;
     })
-    debugger;
   })
 })
