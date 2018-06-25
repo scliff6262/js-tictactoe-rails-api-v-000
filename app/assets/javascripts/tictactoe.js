@@ -55,11 +55,9 @@ $(function(){
   //clears board
   $("#clear").on("click", function(e){
     e.preventDefault()
-    debugger;
     thisGame = null
     $("td").each(function(){
       this.textContent = ""
     })
-    debugger;
   })
 })
