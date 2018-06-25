@@ -72,7 +72,7 @@ $(function(){
 })
 
 function player(){
-  return (window.turn % 2 == 0) ? "X" : "O"
+  return (window.turn % 2 == 1) ? "X" : "O"
 }
 
 function updateState(element){
