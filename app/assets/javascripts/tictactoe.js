@@ -55,6 +55,7 @@ $(function(){
   //clears board
   $("#clear").on("click", function(e){
     e.preventDefault()
+    thisGame = null
     $("td").each(function(box){
       box.textContent = ""
     })
