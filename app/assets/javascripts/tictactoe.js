@@ -72,6 +72,6 @@ function player(){
 
 function updateState(){
   $("td").on("click", function(e){
-    
+    debugger;
   })
 }
