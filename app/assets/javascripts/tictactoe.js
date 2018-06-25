@@ -43,9 +43,7 @@ $(function(){
     const thisID = $(e.target).data("id")
     $.get("/games/" + thisID, function(r){
       let tdArray = $("td")
-      r.data.attributes["state"].each(function(el){
-        
-      })
+      const state = r.data.attributes["state"]
         debugger;
     })
   })
