@@ -55,5 +55,8 @@ $(function(){
   //clears board
   $("#clear").on("click", function(e){
     e.preventDefault()
+    $("td").each(function(box){
+      box.textContent = ""
+    })
   })
 })
