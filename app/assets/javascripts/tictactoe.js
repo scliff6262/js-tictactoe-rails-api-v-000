@@ -42,7 +42,10 @@ $(function(){
     e.preventDefault()
     const thisID = $(e.target).data("id")
     $.get("/games/" + thisID, function(r){
-      // r.data.attributes["state"]
+      let tdArray = $("td")
+      r.data.attributes["state"].each(function(el){
+        
+      })
         debugger;
     })
   })
