@@ -38,7 +38,7 @@ $(function(){
     })
   })
   //reloads a previous games
-  $("button").on("click", function(e){
+  $("ul button").on("click", function(e){
     e.preventDefault()
     debugger;
     //$.get("/games" + )
