@@ -41,7 +41,7 @@ $(function(){
   $("#games").on("click", function(e){
     e.preventDefault()
     const thisID = $(e.target).data("id")
-    
+    debugger;
     $.get("/games/" + thisID, function(r){
       debugger;
     })
