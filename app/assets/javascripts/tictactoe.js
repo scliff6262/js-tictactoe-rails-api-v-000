@@ -55,10 +55,10 @@ $(function(){
   //clears board
   $("#clear").on("click", function(e){
     e.preventDefault()
+    debugger;
     thisGame = null
-    $("td").each(function(box){
+    $("td").each(function(){
       this.textContent = ""
-      debugger;
     })
   })
 })
