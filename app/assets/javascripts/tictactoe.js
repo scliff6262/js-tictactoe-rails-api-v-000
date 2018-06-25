@@ -65,6 +65,6 @@ $(function(){
 
   //returns X or O
   function player(){
-    (window.turn % 2 == 0) ? "X" : "O"
+    return (window.turn % 2 == 0) ? "X" : "O"
   }
 })
