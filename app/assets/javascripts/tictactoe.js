@@ -37,6 +37,7 @@ $(function(){
       $("#games").html(gameList)
     })
   })
+  
   //reloads a previous games
   $("#games").on("click", function(e){
     e.preventDefault()
@@ -51,4 +52,6 @@ $(function(){
     })
   })
 
+  //clears board
+  $("#clear")
 })
