@@ -66,12 +66,10 @@ $(function(){
 
 })
 
-const player = function(){
+function player(){
   return (window.turn % 2 == 0) ? "X" : "O"
 }
 
-const updateState = function(){
-  $("td").on("click", function(e){
-    debugger;
-  })
+function updateState(element){
+  element.textContent = player()
 }
