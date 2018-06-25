@@ -1,14 +1,15 @@
 // Code your JavaScript / jQuery solution here
 //returns X or O
-const player
+function player(){
+  return (window.turn % 2 == 0) ? "X" : "O"
+}
 
+function updateState(){
+  
+}
 
 $(function(){
   //when adding the ability to start a previous game, switch thisGame!!
-  player = function(){
-    return (window.turn % 2 == 0) ? "X" : "O"
-  }
-  
   window.turn = 0//define a turn
   let thisGame //set a game ID to determine if this game has already been saved
   //saves or updates current game
