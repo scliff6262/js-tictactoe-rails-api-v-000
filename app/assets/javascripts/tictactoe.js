@@ -1,3 +1,4 @@
+// Code your JavaScript / jQuery solution here
 $(function(){
   //when adding the ability to start a previous game, switch thisGame!!
   let thisGame //set a game ID to determine if this game has already been saved
@@ -30,7 +31,7 @@ $(function(){
     $.get('/games', function(r){
       let gameList = "<ul>"
       r.data.forEach(function(game){
-        gameList += `<li class="oldGame" data-id="${game["id"]}">` + game["id"] + "</li>"
+        gameList += `<li class="oldGame" data-id="${game["id"]}">` + game["id"] + "<button>Restore</button></li>"
       })
       gameList += "</ul>"
       $("#games").html(gameList)
