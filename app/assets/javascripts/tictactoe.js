@@ -53,6 +53,7 @@ $(function(){
 
   //clears board
   $("#clear").on("click", function(e){
+    debugger;
     e.preventDefault()
     thisGame = null //sets current game ID to null/false on front-end to ensure if statement works when saving
     $("td").each(function(){
