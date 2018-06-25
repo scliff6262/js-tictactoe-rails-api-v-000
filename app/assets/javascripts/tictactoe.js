@@ -59,5 +59,6 @@ $(function(){
     $("td").each(function(box){
       box.textContent = ""
     })
+    debugger;
   })
 })
