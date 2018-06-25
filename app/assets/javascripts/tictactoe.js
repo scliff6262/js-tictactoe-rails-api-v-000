@@ -63,6 +63,10 @@ $(function(){
     })
   })
 
+  $("td").on("click", function(e){
+    debugger;
+  })
+
 
 })
 
