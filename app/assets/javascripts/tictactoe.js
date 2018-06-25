@@ -41,7 +41,7 @@ $(function(){
   //reloads a previous games
   $("#games").on("click", function(e){
     e.preventDefault()
-    turn = 0
+    window.turn = 0
     const thisID = $(e.target).data("id") //gets id of clicked game via data-id attr
     $.get("/games/" + thisID, function(r){
       thisGame = r.data["id"]//gets id from Rails server and sets as thisGame on the front-end
@@ -49,7 +49,7 @@ $(function(){
       const state = r.data.attributes["state"] //grabs state of selected game from rails server
       for(let i = 0; i < state.length; i++){
         if(state[i] === "X" || state[i] === "O"){
-          turn++
+          window.turn++
         }
         tdArray[i].textContent = state[i] //assigns state from server to corresponding tds on front-end
       }
