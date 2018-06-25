@@ -64,9 +64,9 @@ $(function(){
   })
 
   $("td").on("click", function(e){
-    debugger;
-    window.turn++
-    updateState(e.target)
+    if(e.target.textContent === "")
+      window.turn++
+      updateState(e.target)
   })
 
 
