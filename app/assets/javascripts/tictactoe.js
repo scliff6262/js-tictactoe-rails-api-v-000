@@ -62,4 +62,9 @@ $(function(){
       this.textContent = "" //sets each td-tag's value to an empty string
     })
   })
+
+  //returns X or O
+  function player(){
+    (window.turn % 2 == 0) ? "X" : "O"
+  }
 })
