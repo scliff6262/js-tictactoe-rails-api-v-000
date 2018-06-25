@@ -29,11 +29,10 @@ $(function(){
   $("#previous").on("click", function(e){
     e.preventDefault()
     $.get('/games', function(r){
-      let gameList = "<ul>"
+      let gameList = ""
       r.data.forEach(function(game){
         gameList += `<li class="oldGame" data-id="${game["id"]}">` + game["id"] + "<br></li>"
       })
-      gameList += "</ul>"
       $("#games").html(gameList)
     })
   })
