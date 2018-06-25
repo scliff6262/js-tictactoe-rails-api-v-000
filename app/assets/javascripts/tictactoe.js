@@ -51,6 +51,7 @@ $(function(){
         if(state[i] === "X"){
           window.turn++
         } else if(state[i] === "O"){
+          debugger;
           window.turn++
         }
         tdArray[i].textContent = state[i] //assigns state from server to corresponding tds on front-end
