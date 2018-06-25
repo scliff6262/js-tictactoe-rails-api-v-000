@@ -3,7 +3,7 @@
 function player(){
   return (window.turn % 2 == 0) ? "X" : "O"
 }
-window.turn = 0//define a turn
+let turn = 0//define a turn
 
 $(function(){
   //when adding the ability to start a previous game, switch thisGame!!
