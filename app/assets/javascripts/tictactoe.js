@@ -44,7 +44,7 @@ $(function(){
     $.get("/games/" + thisID, function(r){
       let tdArray = $("td")
       const state = r.data.attributes["state"]
-        debugger;
+      for(let i = 0; i <= state.length, i++)
     })
   })
 
