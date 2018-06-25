@@ -47,6 +47,7 @@ $(function(){
       let tdArray = $("td") //creates array of td elements
       const state = r.data.attributes["state"] //grabs state of selected game from rails server
       for(let i = 0; i < state.length; i++){
+        if(state[i] === "X" || state[i] === "O")
         tdArray[i].textContent = state[i] //assigns state from server to corresponding tds on front-end
       }
     })
