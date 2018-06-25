@@ -31,7 +31,7 @@ $(function(){
     $.get('/games', function(r){
       let gameList = ""
       r.data.forEach(function(game){
-        gameList += `<p class="oldGame" data-id="${game["id"]}">` + game["id"] + "</p>"
+        gameList += `<button class="oldGame" data-id="${game["id"]}">` + game["id"] + "</button>"
       })
       $("#games").html(gameList)
     })
