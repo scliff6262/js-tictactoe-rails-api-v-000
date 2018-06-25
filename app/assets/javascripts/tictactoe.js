@@ -45,6 +45,7 @@ $(function(){
       let tdArray = $("td")
       const state = r.data.attributes["state"]
       for(let i = 0; i <= state.length; i++){
+        debugger;
         tdArray[i].textContent = state[i]
       }
     })
