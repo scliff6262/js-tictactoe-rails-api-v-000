@@ -47,7 +47,7 @@ $(function(){
       thisGame = r.data["id"]//gets id from Rails server and sets as thisGame on the front-end
       let tdArray = $("td") //creates array of td elements
       const state = r.data.attributes["state"] //grabs state of selected game from rails server
-      state.filter(function(el){return el != ""})
+      state.filter(function(el){return el != ""}).length
       for(let i = 0; i < state.length; i++){
         tdArray[i].textContent = state[i] //assigns state from server to corresponding tds on front-end
       }
