@@ -42,6 +42,7 @@ $(function(){
     e.preventDefault()
     const thisID = $(e.target).data("id")
     $.get("/games/" + thisID, function(r){
+      // r.data.attributes["state"]
         debugger;
     })
   })
