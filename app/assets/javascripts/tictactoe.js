@@ -40,13 +40,13 @@ $(function(){
   //reloads a previous games
   $("#games").on("click", function(e){
     e.preventDefault()
-    const thisID = $(e.target).data("id")
+    const thisID = $(e.target).data("id") //gets id of clicked game via data-id attr
     $.get("/games/" + thisID, function(r){
-      thisGame = r.data["id"]
-      let tdArray = $("td")
-      const state = r.data.attributes["state"]
+      thisGame = r.data["id"]//gets id from Rails server and sets as thisGame on the front-end
+      let tdArray = $("td") //creates array of td elements
+      const state = r.data.attributes["state"] //grabs state of selected game from rails server
       for(let i = 0; i < state.length; i++){
-        tdArray[i].textContent = state[i]
+        tdArray[i].textContent = state[i] //assigns state from server to corresponding tds on front-end
       }
     })
   })
