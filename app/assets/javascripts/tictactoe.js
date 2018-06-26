@@ -93,6 +93,6 @@ const winningNumbers = [
     [2, 4, 6]
   ]
 
-function checkWinner(){
+function checkWinner(state){
   
 }
