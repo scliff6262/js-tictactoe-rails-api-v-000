@@ -105,6 +105,10 @@ function checkWinner(){
   })
 }
 
+function setMessage(winner){
+  `Player ${winner} Won!`
+}
+
 function doTurn(element){
   window.turn++
   updateState(element)
