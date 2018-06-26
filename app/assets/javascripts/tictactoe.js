@@ -99,7 +99,7 @@ function checkWinner(){
   const currentBoard = gameState()
   winningNumbers.forEach(function(nums){
     if (currentBoard[nums[0]] === currentBoard[nums[1]] && currentBoard[nums[1]] === currentBoard[nums[2]]){
-      setMessage()
+      setMessage(currentBoard[nums[1]])
       return true
     } 
   })
