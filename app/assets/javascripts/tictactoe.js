@@ -97,7 +97,6 @@ function updateState(element){
 
 function checkWinner(){
   winningNumbers.forEach(function(nums){
-    debugger;
     if (gameState[nums[0]] === gameState[nums[1]] && gameState[nums[1]] === gameState[nums[2]]){
       setMessage(gameState[nums[1]])
       return true
