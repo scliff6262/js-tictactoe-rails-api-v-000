@@ -91,6 +91,7 @@ function player(){
 }
 
 function updateState(element){
+  gameState = []
   element.textContent = player()
   $("td").each(function(){gameState.push(this.textContent)})
   debugger;
