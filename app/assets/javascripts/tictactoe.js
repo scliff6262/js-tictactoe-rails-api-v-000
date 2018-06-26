@@ -1,5 +1,4 @@
 // Code your JavaScript / jQuery solution here
-let state;
 $(function(){
   //when adding the ability to start a previous game, switch thisGame!!
   window.turn = 0//define a turn
@@ -76,6 +75,9 @@ $(function(){
 
 })
 
+function currentState(){
+  return $("td").map(function(el){return el.textContent})
+}
 function player(){
   return (window.turn % 2 == 0) ? "X" : "O"
 }
