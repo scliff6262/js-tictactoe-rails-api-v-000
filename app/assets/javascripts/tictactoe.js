@@ -46,8 +46,8 @@ $(function(){
     $.get("/games/" + thisID, function(r){
       thisGame = r.data["id"]//gets id from Rails server and sets as thisGame on the front-end
       let tdArray = $("td") //creates array of td elements
-      debugger;
       state = r.data.attributes["state"] //grabs state of selected game from rails server
+      debugger;
       window.turn = state.filter(function(el){return el != ""}).length //counts taken spots on the board and sets the turn
       for(let i = 0; i < state.length; i++){
         tdArray[i].textContent = state[i] //assigns state from server to corresponding tds on front-end
