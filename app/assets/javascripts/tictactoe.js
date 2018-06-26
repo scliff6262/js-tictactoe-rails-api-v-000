@@ -58,6 +58,7 @@ $(function(){
   //clears board
   $("#clear").on("click", function(e){
     e.preventDefault()
+    gameState = []
     window.turn = 0
     thisGame = null //sets current game ID to null/false on front-end to ensure if statement works when saving
     $("td").each(function(){
