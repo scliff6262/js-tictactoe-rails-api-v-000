@@ -96,8 +96,9 @@ function updateState(element){
 }
 
 function checkWinner(){
+  const currentBoard = gameState()
   winningNumbers.forEach(function(nums){
-    debugger;
+    if gameState()[0]
   })
 }
 
