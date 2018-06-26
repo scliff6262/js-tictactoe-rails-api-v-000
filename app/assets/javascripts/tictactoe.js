@@ -98,7 +98,9 @@ function updateState(element){
 }
 
 function checkWinner(state){
-  
+  winningNumbers.forEach(function(nums){
+    debugger;
+  })
 }
 
 function doTurn(element){
