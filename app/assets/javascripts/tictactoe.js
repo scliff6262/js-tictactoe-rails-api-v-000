@@ -106,4 +106,5 @@ function checkWinner(state){
 function doTurn(element){
   window.turn++
   updateState(element)
+  checkWinner()
 }
