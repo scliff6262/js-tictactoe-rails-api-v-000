@@ -96,6 +96,7 @@ function updateState(element){
 }
 
 function checkWinner(){
+  $("td").each(function(){gameState.push(this.innerHTML)})
   let winner = false
   winningNumbers.forEach(function(nums){
     if (gameState[nums[0]] === gameState[nums[1]] && gameState[nums[1]] === gameState[nums[2]] && gameState[nums[0]] !== ""){
