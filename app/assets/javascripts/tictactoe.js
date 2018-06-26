@@ -84,7 +84,8 @@ const winningNumbers = [
     [0, 4, 8],
     [2, 4, 6]
   ]
-const gameState = []
+let gameState = []
+
 function player(){
   return (window.turn % 2 == 0) ? "X" : "O"
 }
