@@ -1,5 +1,5 @@
 // Code your JavaScript / jQuery solution here
-let state = 
+let state;
 $(function(){
   //when adding the ability to start a previous game, switch thisGame!!
   window.turn = 0//define a turn
