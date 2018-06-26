@@ -98,5 +98,5 @@ function checkWinner(state){
 }
 
 function doTurn(element){
-  updateState
+  updateState(element)
 }
