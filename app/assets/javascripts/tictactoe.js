@@ -75,9 +75,6 @@ $(function(){
 
 })
 
-function currentState(state){
-  return $("td").map(function(el){return el.textContent})
-}
 function player(){
   return (window.turn % 2 == 0) ? "X" : "O"
 }
