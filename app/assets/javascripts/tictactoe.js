@@ -99,7 +99,6 @@ function checkWinner(){
   let winner = false
   winningNumbers.forEach(function(nums){
     if (gameState[nums[0]] === gameState[nums[1]] && gameState[nums[1]] === gameState[nums[2]] && gameState[nums[0]] !== ""){
-      debugger;
       setMessage(gameState[nums[1]])
       winner = true
     } 
