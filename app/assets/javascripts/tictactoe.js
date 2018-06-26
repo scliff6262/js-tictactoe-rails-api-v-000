@@ -106,7 +106,7 @@ function checkWinner(){
 }
 
 function setMessage(winner){
-  `Player ${winner} Won!`
+  $("#message")`<p>Player ${winner} Won!</p>`
 }
 
 function doTurn(element){
