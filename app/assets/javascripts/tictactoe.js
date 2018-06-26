@@ -74,15 +74,6 @@ $(function(){
 
 
 })
-
-function player(){
-  return (window.turn % 2 == 0) ? "X" : "O"
-}
-
-function updateState(element){
-  element.textContent = player()
-}
-
 const winningNumbers = [
     [0, 1, 2],
     [3, 4, 5],
@@ -93,6 +84,14 @@ const winningNumbers = [
     [0, 4, 8],
     [2, 4, 6]
   ]
+
+function player(){
+  return (window.turn % 2 == 0) ? "X" : "O"
+}
+
+function updateState(element){
+  element.textContent = player()
+}
 
 function checkWinner(state){
   
