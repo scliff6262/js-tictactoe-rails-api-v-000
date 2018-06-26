@@ -64,7 +64,7 @@ $(function(){
       this.textContent = "" //sets each td-tag's value to an empty string
     })
   })
-
+  //adds X or O to the board, changes the state, and invokes doTurn()
   $("td").on("click", function(e){
     if(e.target.textContent === ""){
       doTurn(e.target)
