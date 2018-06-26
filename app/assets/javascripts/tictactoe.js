@@ -68,7 +68,7 @@ $(function(){
   $("td").on("click", function(e){
     if(e.target.textContent === ""){
       window.turn++
-      updateState(e.target)
+      doTurn(e.target)
     }
   })
 
