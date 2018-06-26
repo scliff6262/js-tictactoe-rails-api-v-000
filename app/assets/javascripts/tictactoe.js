@@ -67,7 +67,7 @@ $(function(){
   //adds X or O to the board, changes the state, and invokes doTurn()
   $("td").on("click", function(e){
     if(e.target.textContent === ""){
-      debugger;
+      $("td").each(function(){gameState.push(this.textContent)})
       doTurn(e.target)
     }
   })
