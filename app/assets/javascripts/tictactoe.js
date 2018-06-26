@@ -67,7 +67,6 @@ $(function(){
   //adds X or O to the board, changes the state, and invokes doTurn()
   $("td").on("click", function(e){
     if(e.target.textContent === ""){
-      $("td").each(function(){gameState.push(this.textContent)})
       doTurn(e.target)
     }
   })
@@ -92,6 +91,7 @@ function player(){
 
 function updateState(element){
   element.textContent = player()
+  $("td").each(function(){gameState.push(this.textContent)})
 }
 
 function checkWinner(state){
