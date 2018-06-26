@@ -100,7 +100,7 @@ function checkWinner(){
   winningNumbers.forEach(function(nums){
     if (gameState[nums[0]] === gameState[nums[1]] && gameState[nums[1]] === gameState[nums[2]]){
       setMessage(gameState[nums[1]])
-      return true
+      winner =  true
     } 
   })
 }
