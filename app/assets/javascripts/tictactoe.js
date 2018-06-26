@@ -112,4 +112,5 @@ function doTurn(element){
   window.turn++
   updateState(element)
   checkWinner()
+  debugger;
 }
