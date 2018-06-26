@@ -97,3 +97,7 @@ const winningNumbers = [
 function checkWinner(state){
   
 }
+
+function doTurn(element){
+  updateState
+}
