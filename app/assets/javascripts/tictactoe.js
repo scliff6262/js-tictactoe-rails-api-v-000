@@ -75,7 +75,7 @@ $(function(){
 
 })
 
-function currentState(){
+function currentState(state){
   return $("td").map(function(el){return el.textContent})
 }
 function player(){
