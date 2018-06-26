@@ -103,6 +103,7 @@ function checkWinner(){
       winner =  true
     } 
   })
+  return winner
 }
 
 function setMessage(winner){
