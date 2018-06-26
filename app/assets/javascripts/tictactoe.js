@@ -97,7 +97,7 @@ function updateState(element){
   debugger;
 }
 
-function checkWinner(state){
+function checkWinner(){
   winningNumbers.forEach(function(nums){
     debugger;
   })
