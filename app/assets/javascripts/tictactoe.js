@@ -92,6 +92,7 @@ function player(){
 function updateState(element){
   element.textContent = player()
   $("td").each(function(){gameState.push(this.textContent)})
+  debugger;
 }
 
 function checkWinner(state){
